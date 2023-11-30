@@ -1,5 +1,5 @@
 {
-  "project": "hlx",
+  "project": "bootcamp-edge",
   "pushDownSelector": "header",
   "plugins": [
     {
