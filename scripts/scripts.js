@@ -445,8 +445,8 @@ function decorateBreadcrumb(main) {
   const isDocumentationLanding = window.location.pathname === '/docs/';
 
   const list = createTag('ul');
-  const home = createTag('li', {}, '<a href="/home" class="breadcrumb-link-underline-effect">Home</a>');
-  const docs = createTag('li', {}, '<a href="/docs/" class="breadcrumb-link-underline-effect">Documentation</a>');
+  const home = createTag('li', {}, '<a href="#" class="breadcrumb-link-underline-effect">Home</a>');
+  const docs = createTag('li', {}, '<a href="#" class="breadcrumb-link-underline-effect">Documentation</a>');
 
   list.append(home);
   list.append(docs);
