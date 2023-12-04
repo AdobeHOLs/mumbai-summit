@@ -109,7 +109,7 @@ async function populateSearchResults(searchTerms, resultsContainer) {
 }
 
 export default function onSearchInput(value, resultsContainer, advancedLink) {
-  populateSearchResults(value, resultsContainer);
+  //populateSearchResults(value, resultsContainer);
   if (advancedLink) {
     const href = new URL(advancedLink.href);
     href.searchParams.set('q', value);
