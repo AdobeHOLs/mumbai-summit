@@ -74,7 +74,7 @@ export default async function decorate(block) {
           Back
       </a>
     `);
-    docButton.prepend(backDocPageBtn);
+   // docButton.prepend(backDocPageBtn);
   }
   const docToggleMenuButton = docButton.querySelector('.documentation-btn');
 
