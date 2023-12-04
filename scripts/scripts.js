@@ -458,7 +458,7 @@ function decorateBreadcrumb(main) {
     const section = createTag(
       'li',
       {},
-      `<a href="/docs/#${category.toLowerCase()}" class="breadcrumb-link-underline-effect category">${category}</a>`,
+      `<a href="#" class="breadcrumb-link-underline-effect category">${category}</a>`,
     );
     list.append(section);
   }
