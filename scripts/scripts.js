@@ -582,13 +582,6 @@ function prepareSideNav(main) {
  * loads everything needed to get to LCP.
  */
 async function loadEager(doc) {
-  if (getMetadata('experiment')
-    || Object.keys(getAllMetadata('campaign')).length
-    || Object.keys(getAllMetadata('audience')).length) {
-    // eslint-disable-next-line import/no-relative-packages
-    const { loadEager: runEager } = await import('../plugins/experimentation/src/index.js');
-    await runEager(document, { audiences: AUDIENCES }, pluginContext);
-  }
   setLanguageForAccessibility('en');
   customDecorateTemplateAndTheme();
 
@@ -720,13 +713,6 @@ async function loadLazy(doc) {
   window.hlx.plugins.run('loadLazy');
 
   sampleRUM('lazy');
-  if ((getMetadata('experiment')
-    || Object.keys(getAllMetadata('campaign')).length
-    || Object.keys(getAllMetadata('audience')).length)) {
-    // eslint-disable-next-line import/no-relative-packages
-    const { loadLazy: runLazy } = await import('../plugins/experimentation/src/index.js');
-    await runLazy(document, { audiences: AUDIENCES }, pluginContext);
-  }
 }
 
 /**
