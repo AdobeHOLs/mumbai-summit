@@ -479,6 +479,7 @@ function decorateBreadcrumb(main) {
     const article = createTag('li', {}, `<a href="${window.location.pathname}">${title}</a>`);
     list.append(article);
 
+    // eslint-disable-next-line no-unused-vars
     const backBtn = createTag('div', { class: 'guides-back-btn desktop' }, `
         <span class="icon icon-icon-arrow"></span>
         <a href="/docs/" class="link-underline-effect">

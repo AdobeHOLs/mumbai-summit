@@ -68,13 +68,14 @@ export default async function decorate(block) {
   const docButton = createTag('div', { class: 'side-navigation-overlay-btn-wrapper in-doc-page' }, docBtnInner);
   const isDocumentationLanding = window.location.pathname === '/docs/';
   if (!isDocumentationLanding) {
+    // eslint-disable-next-line no-unused-vars
     const backDocPageBtn = createTag('div', { class: 'guides-back-btn' }, `
       <span class="icon icon-icon-arrow"></span>
       <a href="/docs/" class="link-underline-effect">
           Back
       </a>
     `);
-   // docButton.prepend(backDocPageBtn);
+    // docButton.prepend(backDocPageBtn);
   }
   const docToggleMenuButton = docButton.querySelector('.documentation-btn');
 

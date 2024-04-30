@@ -61,6 +61,7 @@ function highlightTextElements(terms, elements) {
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 async function populateSearchResults(searchTerms, resultsContainer) {
   const limit = 12;
   const terms = searchTerms.toLowerCase().split(' ').map((e) => e.trim()).filter((e) => !!e);
@@ -109,7 +110,7 @@ async function populateSearchResults(searchTerms, resultsContainer) {
 }
 
 export default function onSearchInput(value, resultsContainer, advancedLink) {
-  //populateSearchResults(value, resultsContainer);
+  // populateSearchResults(value, resultsContainer);
   if (advancedLink) {
     const href = new URL(advancedLink.href);
     href.searchParams.set('q', value);
