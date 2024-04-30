@@ -15,7 +15,6 @@ import {
   getAllMetadata,
   getMetadata,
   decorateBlock,
-  toCamelCase,
 } from './lib-franklin.js';
 import {
   addInViewAnimationToSingleElement,
@@ -30,17 +29,6 @@ const AUDIENCES = {
   mobile: () => window.innerWidth < 600,
   desktop: () => window.innerWidth >= 600,
   // define your custom audiences here as needed
-};
-
-// Define an execution context
-const pluginContext = {
-  getAllMetadata,
-  getMetadata,
-  loadCSS,
-  loadScript,
-  sampleRUM,
-  toCamelCase,
-  toClassName,
 };
 
 window.hlx.plugins.add('performance', {
