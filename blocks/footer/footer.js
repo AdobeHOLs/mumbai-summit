@@ -130,6 +130,7 @@ export default async function decorate(block) {
   footer.innerHTML = html;
 
   // re-organize the footer into 2 sections
+  console.log(footer);
   const footerCTAButton = extractCTAButton(footer);
   const footerNavSection = decorateFooterNavSection(footer, footerCTAButton);
   const footerCopyrightSection = decoratefooterCopyrightSection(footer);
